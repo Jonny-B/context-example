@@ -51,3 +51,29 @@ nav li:first-child {
   background-color: #333;
   color: #f5f
 }
+
+/* Body */
+.footer {
+  background-color: #fff;
+  color: #333;
+}
+
+.footer.dark {
+  background-color: #333;
+  color: #f5f
+}
+
+/* Links */
+a.dark {
+  color: white !important;
+  text-decoration: none;
+}
+
+a.light {
+  color: black !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
