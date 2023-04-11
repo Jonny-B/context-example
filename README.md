@@ -4,6 +4,8 @@ This simple application implements a simple React context provider for passing t
 
 A simple custom hook is available that returns the URLs for my portfolio applications. Although this example is straightforward, it demonstrates how to create a custom hook and how it can be used for reusability. Custom hooks can also access built-in React functions, such as useState or useContext. In my case, I am utilizing useContext to determine the currently selected theme.
 
+Finally, I have added a small higher order component that tracks component render times. This HOC will record the time it takes for the app to rerender when the theme toggle is switched.
+
 To start the app, run:
 `yarn install`
 `yarn start`

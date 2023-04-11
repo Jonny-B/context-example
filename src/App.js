@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
 import './App.css';
+import withRenderTime from './components/withRenderTime';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -12,11 +13,21 @@ function App() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
+  const Content = () => {
+    return (
+      <>
+        <Header onToggleTheme={toggleTheme} />
+        <Body />
+        <Footer />
+      </>
+    )
+  }
+
+  const RenderTimedContent = withRenderTime(Content)
+
   return (
     <ThemeProvider value={theme}>
-      <Header onToggleTheme={toggleTheme} />
-      <Body />
-      <Footer />
+      <RenderTimedContent />
     </ThemeProvider>
   );
 }
