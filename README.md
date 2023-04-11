@@ -14,7 +14,10 @@ The app is very simple and contains:
 - a body with simple placeholder text
 - and a footer with simple placeholder text
 
+### Light Theme
 ![light theme](./public/light.jpg "Light Theme")
+
+### Dark Theme
 ![dark theme](./public/dark.jpg "Dark Theme")
 
 
